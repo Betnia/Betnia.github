@@ -2,10 +2,15 @@
  
    
      h1{
+      text-align:left;
+      font-family:monospace;
+      font-size:32px;
+  }  
+h2{
       text-align:center;
       font-family:monospace;
       font-size:32px;
-  }                                                
+  }                                              
      body{
      background-color: white;
      font:16px;
@@ -72,7 +77,10 @@ width:100%;
 box-sizing:border-box;
    }
    
-  
+  div-title{
+Text-align:center;
+Font-size:32px;
+}
 
 
 
