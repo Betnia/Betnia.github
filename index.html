@@ -9,7 +9,141 @@
     <link rel="stylesheet" href="css/styles.css">
  
   </head>
-  
+ 
+ <style>
+ 
+   
+     h1{
+      text-align:left;
+      font-family:monospace;
+      font-size:32px;
+  }  
+h2{
+      text-align:center;
+      font-family:monospace;
+      font-size:32px;
+  }                                              
+     body{
+     background-color: white;
+     font:16px;
+     }
+
+/* HEADER */
+#header-nav {
+background-color:gray;
+border-radius:0;
+raduis:0;
+padding:20px;
+border:5px solid black;
+width:100%;
+height:100px;
+}
+   
+  .navbar-toggle{
+  position:relative;
+  float:right;
+  padding:9px 10px;
+  margin-top:0px;
+  nargin-right:25px;
+  margin-bottom:5px;
+  background-color:transparent;
+  }
+  .navbar-toggle:focus{
+  ouline:0;
+  }
+  .navbar-toggle .icon-bar {
+  display:block;
+  width:22px;
+  height:2px;
+  border-raduis:1px;
+  }
+  .navbar-toggle icon-bar + icon-bar{
+  margin-top:4px;
+  }
+ @media (min-width:768px) {
+ .navbar-toggle {
+ display:none;
+ }
+}
+
+ navbar-nav{
+ margin:7.5px-15px;
+ }
+ .navbar-nav > li{
+ padding-top:10px;
+ padding-bottom:10px;
+ line-height:20px;
+ }
+ 
+ div#content {
+ background-color:gray;
+ text-align:left;
+ width:100%;
+ height:300px;
+ padding:10px;
+ margin:20px;
+ border:3px solid black;
+ float:left;
+ font-size:16px; 
+ font-family:monospace, Serif;
+box-sizing:border-box;
+   }
+   
+  div.title {
+ text-align:center;
+ font-size:32px;
+}
+
+
+
+  }   
+  /*large devices only*/ 
+   @media (min-width:1200px) {
+     .col-lg-1, .col-lg-2, .col-lg-3 
+   }
+   .col-lg-1 {
+     width:33.33%;
+   }
+   .col-lg-2 {
+     width:66.66%;
+   }
+   .col-lg-3 {
+     width:100%;
+   }
+   
+   
+   /*medium devices only*/                           
+     @media (max-width:1200px) {
+     .col-md-1, .col-md-2, .col-md-3 
+   }
+   .col-md-1 {
+     width:33.33%;
+   }
+   .col-md-2 {
+     width:66.66%;
+   }
+   .col-md-3 {
+     width:100%;
+   }
+   
+    /*small devices only*/                           
+     @media (max-width:767px){
+     .col-xs-1, .col-xs-2, .col-xs-3 
+   }
+   .col-xs-1 {
+     width:33.33%;
+   }
+   .col-xs-2 {
+     width:66.66%;
+   }
+   .col-xs-3 {
+     width:100%;
+   }
+   
+   
+    </style>
+ 
+ 
 <body>
   <header>
     <nav id="header-nav" class="navbar navbar-default">
@@ -24,16 +158,15 @@
   <h2> Our Menu </h2>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="chicken"></span>
-            <span class=" beef"></span>
-            <span class="sushi"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
   
     <section> 
-    <div id="box">
-       
+    <div id="box"> 
     <div class="col-lg-3 col-md-6 col-md-12">
-    <div id="content"  class="container"> <div class="container">Chicken</div>
+    <div id="content"  class="container"> <div class="title">Chicken</div>
      Lorem ipsum dolor sit amet, 
       Sunt enim quasi prima elementa naturae, 
       il acciderat ei, quod nollet, nisi quod anulum,   
@@ -42,14 +175,13 @@
       Sunt enim quasi prima elementa naturae, 
       il acciderat ei, quod nollet, nisi quod anulum,   
       quo delectabatur, in mari abiecerat
-       quibus ubertas orationis adhiberi vix potest.
-                                                 
-          </section>                                                       
+       quibus ubertas orationis adhiberi vix potest.                                        
+       </section>                                                       
                                                                 
      <section> 
       <div id="box">
       <div class="col-lg-3 col-md-6 col-md-12">
-   <div id="content"  class="container"><div class="container">Chicken</div>
+   <div id="content"  class="container"><div class="title">Beef</div>
 Lorem ipsum dolor sit amet, 
       Sunt enim quasi prima elementa naturae, 
       il acciderat ei, quod nollet, nisi quod anulum,   
@@ -65,7 +197,7 @@ Lorem ipsum dolor sit amet,
      <section>
       <div id="box">
        <div class="col-lg-3 col-md-6 col-xs-12">
-     <div id="content" class="container"><div class="container">Chicken</div>
+     <div id="content" class="container"><div class="title">Sushi</div>
  Lorem ipsum dolor sit amet, 
       Sunt enim quasi prima elementa naturae, 
       il acciderat ei, quod nollet, nisi quod anulum,   
