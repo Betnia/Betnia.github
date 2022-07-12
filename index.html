@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food, LLC</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
- 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
  
- <style>
- 
-   
+ <style> 
      h1{
       text-align:left;
       font-family:monospace;
@@ -26,62 +24,14 @@ h2{
      body{
      background-color: white;
      font:16px;
-     }
-
-/* HEADER */
-#header-nav {
-background-color:gray;
-border-radius:0;
-raduis:0;
-padding:20px;
-border:5px solid black;
-width:100%;
-height:100px;
-}
-   
-  .navbar-toggle{
-  position:relative;
-  float:right;
-  padding:9px 10px;
-  margin-top:0px;
-  nargin-right:25px;
-  margin-bottom:5px;
-  background-color:transparent;
-  }
-  .navbar-toggle:focus{
-  ouline:0;
-  }
-  .navbar-toggle .icon-bar {
-  display:block;
-  width:22px;
-  height:2px;
-  border-raduis:1px;
-  }
-  .navbar-toggle icon-bar + icon-bar{
-  margin-top:4px;
-  }
- @media (min-width:768px) {
- .navbar-toggle {
- display:none;
- }
-}
-
- navbar-nav{
- margin:7.5px-15px;
- }
- .navbar-nav > li{
- padding-top:10px;
- padding-bottom:10px;
- line-height:20px;
- }
- 
+     } 
  div#content {
  background-color:gray;
  text-align:left;
  width:100%;
  height:300px;
  padding:10px;
- margin:20px;
+ margin:25px;
  border:3px solid black;
  float:left;
  font-size:16px; 
@@ -94,7 +44,97 @@ box-sizing:border-box;
  font-size:32px;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+}
+nav{
+  background: gray;
+  height: 80px;
+  width: 100%;
+}
 
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height:80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height:100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: gray;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
 
   }   
   /*large devices only*/ 
@@ -145,24 +185,23 @@ box-sizing:border-box;
  
  
 <body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-      <div class="navbar-header"></div>
-    </div>
-                                
-<div class="navbar-brand">
-<h1>Food, LLC</h1>
-</div>
-</Header>
+ 
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Chicken</a></li>
+        <li><a href="#">Beef</a></li>
+        <li><a href="#">Sushi</a></li>
+      </ul>
+      <h1>Food, LLC</h1>
+    </nav>
+    <section></section>
+
   <h2> Our Menu </h2>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-  
+   
     <section> 
     <div id="box"> 
     <div class="col-lg-3 col-md-6 col-md-12">
