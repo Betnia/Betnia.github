@@ -6,6 +6,41 @@
   <script src="SpeakHello.js"></script>
   <script src="SpeakGoodBye.js"></script>
   <script src="script.js"></script>
+  <script>
+    (function () {
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+console.log(names);
+  
+
+for (var i = 0; i < names.length; i++) {
+  console.log("Goodbye " + names[i]);
+}
+
+for (var i = 0; i < names.length; i++) {
+  console.log("Hello " + names[i]);
+}
+
+ var Hellospeaker = {};
+  Hellospeaker.name ="Hello";
+  Hellospeaker.sayHello = function() {
+    console.log("Hello" + Hellospeaker.name);
+  }
+
+  var GoodbyeSpeaker = {};
+  GoodbyeSpeaker.name ="Goodbye";
+  GoodbyeSpeaker.sayGoodbye = function() {
+    console.log("Goodbye" + GoodbyeSpeaker.name);
+  }
+  
+  var firstLetter = names[i].charAt(0).toLowerCase();
+
+  if (firstLetter === 'j') {
+    GoodbyeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
+})();
+    </script>
 </head>
 <body>
 </body>
