@@ -1,25 +1,29 @@
 <script>
 //Arrays
-var names = ["Jane", "John", "Joe", "James"];
+(function () {
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 console.log(names);
-
-for (i = 0; i < names.length; i++) {
-  console.log("Goodbye" + names[i]);
+  
+function speak(name) {
+  console.log(speakWord + " " + name);
 }
 
-var names2 = ["Emily", "Michael", "Betty"];
-
+  var speakWord = "Good Bye";
+for (var i = 0; i < names.length; i++) {
+  console.log("Goodbye" + names[i]);
+}
 for (var i = 0; i < names2.length; i++) {
   console.log("Hello" + names2[i]);
 };
 
-for (var name in names2) {
-  console.log("Hello " + names2[name]);
+  var firstLetter = names[i].charAt(0).toLowerCase();
+
+  if (firstLetter === 'j') {
+    GoodbyeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
 }
 
-names2.greeting = "Goodbye!";
-
-for (var name in names2) {
-  console.log("Hello " + names2[name]);
-}
+})();
 </script>
