@@ -1,20 +1,16 @@
-<script>
 //Arrays
 (function () {
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 console.log(names);
   
-function speak(name) {
-  console.log(speakWord + " " + name);
+
+for (var i = 0; i < names.length; i++) {
+  console.log("Goodbye " + names[i]);
 }
 
-  var speakWord = "Good Bye";
 for (var i = 0; i < names.length; i++) {
-  console.log("Goodbye" + names[i]);
+  console.log("Hello " + names[i]);
 }
-for (var i = 0; i < names2.length; i++) {
-  console.log("Hello" + names2[i]);
-};
 
   var firstLetter = names[i].charAt(0).toLowerCase();
 
@@ -23,7 +19,6 @@ for (var i = 0; i < names2.length; i++) {
   } else {
     helloSpeaker.speak(names[i]);
   }
-}
-
 })();
-</script>
+
+
