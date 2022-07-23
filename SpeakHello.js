@@ -1,8 +1,7 @@
-(function () {
-console.log();
-  var Hellospeaker = {};
-  Hellospeaker.name ="Hello";
-  Hellospeaker.sayHello = function() {
-    console.log("Hello" + Hellospeaker.name);
-  }
-})();
+(function (window) {
+  var speakWord = "Hello";
+  var helloSeaker = function (name) {
+    console.log("speakWord + " " + name);
+     }
+  window.hellospeaker = hellospeaker;
+})(window);
