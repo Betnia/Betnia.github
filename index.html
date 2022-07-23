@@ -3,41 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Module 4 Assignment</title>
+  <script src ="SpeakerHello.js"></script>
+  <script src ="SpeakerGoodbye.js"></script>
+  <script src ="Script.js"></script>
 </head>
 <body>
+  <h1>Module 4 Solution</h1>
+  <p> Open the console for output</p>
 </body>
-  <script>
-    document.body.innerHTML =
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-console.log(names);
-  
-
-for (var i = 0; i < names.length; i++) {
-  console.log("Goodbye " + names[i]);
-}
-
-for (var i = 0; i < names.length; i++) {
-  console.log("Hello " + names[i]);
-}
-
- var Hellospeaker = {};
-  Hellospeaker.name ="Hello";
-  Hellospeaker.sayHello = function() {
-    console.log("Hello" + Hellospeaker.name);
-  }
-
-  var GoodbyeSpeaker = {};
-  GoodbyeSpeaker.name ="Goodbye";
-  GoodbyeSpeaker.sayGoodbye = function() {
-    console.log("Goodbye" + GoodbyeSpeaker.name);
-  }
-  
-  var firstLetter = names[i].charAt(0).toLowerCase();
-
-  if (firstLetter === 'j') {
-    GoodbyeSpeaker.speak(names[i]);
-  } else {
-    helloSpeaker.speak(names[i]);
-  }
-    </script>
 </html>
