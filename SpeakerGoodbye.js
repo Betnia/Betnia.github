@@ -28,7 +28,7 @@
       console.log(speakWord + " " + name);
      }
   
-  window.byeSpeaker = byeSpeaker;
+byeSpeaker.speak = byeSpeaker;
   
 })(window);
 
