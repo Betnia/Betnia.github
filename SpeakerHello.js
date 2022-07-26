@@ -22,12 +22,13 @@
 // xxxx.xxxx = helloSpeaker;
 
 (function(window) {
+  var helloSpeaker = {};
   var speakWord = "Hello";
-  var helloSeaker = function (name) {
+ helloSeaker = function (name) {
     console.log(speakWord + " " + name);
      }
   
- helloSpeaker.speak = helloSpeaker;
+ window.helloSpeaker = helloSpeaker;
   
 })(window);
 
