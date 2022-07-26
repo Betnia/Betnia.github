@@ -27,7 +27,7 @@
     console.log(speakWord + " " + name);
      }
   
-  window.helloSpeaker = helloSpeaker;
+ helloSpeaker.speak = helloSpeaker;
   
 })(window);
 
