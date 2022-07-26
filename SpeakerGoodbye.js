@@ -24,7 +24,7 @@
 (function(window) {
   var byeSpeaker = {};
   var speakWord = "Good bye";
-  byeSeaker.SpeakGoodBye = function (name) {
+  byeSeaker = function (name) {
       console.log(speakWord + " " + name);
      }
   
